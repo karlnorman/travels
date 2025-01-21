@@ -5,10 +5,13 @@ body {
 }
 
 header {
-  background: #4a90e2;
   color: white;
   padding: 1em 0;
-  text-align: center;
+  background: #4a90e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -27,8 +30,16 @@ h2 {
 }
 
 nav {
-  margin: 1em 0;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
 }
 
 nav a {
@@ -40,12 +51,13 @@ nav a {
 
 nav a:hover {
   color: Navy;
+  font-style: oblique;
 }
 
 section {
   padding: 2em;
   margin: 1em 0;
-  background: #f4f4f4;
+  background: #f5f2f2;
   border-radius: 8px;
 }
 
@@ -64,8 +76,8 @@ footer {
   color: white;
 }
 
-@media (max-width: 20px) {
-  */ nav a {
+@media (max-width: 600px) {
+  nav a {
     display: block;
     margin: 10px 0;
   }
